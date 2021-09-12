@@ -16,13 +16,13 @@ export default function App() {
         <GlobalStyles />
         <HeadPanel />  
           <Switch>
-            <Route path="/sign-in">
+            <Route path="/headburger/sign-in">
               <SignIn />
             </Route>
-            <Route path="/sign-up">
+            <Route path="/headburger/sign-up">
               <SignUp />
             </Route>
-            <Route path="/*">
+            <Route path="/headburger/">
               <Main />
             </Route>
           </Switch>       
