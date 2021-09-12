@@ -14,14 +14,13 @@ function HeadPanel() {
         setOpen(false);
     };
 
-
     return (
         <Container>
         <HeaderSpace />
         <Navbar fixed="top" bg="dark" variant="dark" className="py-0 vw-100">      
             <Container fluid className="bg-dark">
                 <OpacityHover>
-                    <Link onClick={headerRedirect('/')} to="/">
+                    <Link onClick={headerRedirect('/*')} to="/*">
                         <Navbar.Brand>
                             <img src={Logo} height="40" alt="burger" />
                             {' '}
