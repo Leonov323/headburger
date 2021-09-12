@@ -7,7 +7,8 @@ const StyledMain = styled.div`
     min-height: 200vh;
     width: 100%;
     background: gray;
-    display: block
+    display: block;
+
 `
 
 export const Main = () => {

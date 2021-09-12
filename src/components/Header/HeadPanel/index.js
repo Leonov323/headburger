@@ -5,7 +5,6 @@ import React, { useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
-
 function HeadPanel() {
     const [isOpen, setOpen] = useState(false);
     isOpen ? disableBodyScroll(document) : enableBodyScroll(document)
