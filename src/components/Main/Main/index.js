@@ -1,6 +1,6 @@
 import { Container } from 'react-bootstrap'
 import styled from 'styled-components'
-import Burger from '../../Header/HeadPanel/logo.png'
+import Burger from '../../Header/logo.png'
 
 const StyledMain = styled.div`
     padding-top: 60px;
