@@ -11,7 +11,7 @@ export const HeadPanelStyled = styled.div`
         transition: all 1s ease-out;
         transform: ${({ isOpen }) => isOpen ? 'translatey(100vh)' : 'translatey(-100vh)'};
         padding-top: 75px;
-        button {
+        a {
             width: 100%;
         }
 `
@@ -21,4 +21,10 @@ export const OpacityHover = styled.div`
     &:hover {
         opacity: 0.7;
     }
+`
+
+export const HeaderSpace = styled.div`
+    height: 45px;
+    width: 100%;
+    background: #292b2c;;
 `

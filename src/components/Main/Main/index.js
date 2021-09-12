@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Burger from '../../Header/logo.png'
 
 const StyledMain = styled.div`
-    padding-top: 60px;
+    padding-top: 10px;
     min-height: 200vh;
     width: 100%;
     background: gray;
