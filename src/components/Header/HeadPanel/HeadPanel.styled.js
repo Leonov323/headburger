@@ -17,7 +17,7 @@ export const HeadPanelStyled = styled.div`
 `
 
 export const OpacityHover = styled.div`
-    transition: all .2s linear;
+    transition: opacity .2s linear;
     &:hover {
         opacity: 0.7;
     }
