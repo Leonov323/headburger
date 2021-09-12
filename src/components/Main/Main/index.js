@@ -8,7 +8,6 @@ const StyledMain = styled.div`
     width: 100%;
     background: gray;
     display: block;
-
 `
 
 export const Main = () => {

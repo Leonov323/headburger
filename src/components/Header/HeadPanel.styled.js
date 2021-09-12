@@ -21,6 +21,9 @@ export const OpacityHover = styled.div`
     &:hover {
         opacity: 0.7;
     }
+    a {
+        text-decoration: none;
+    }
 `
 
 export const HeaderSpace = styled.div`

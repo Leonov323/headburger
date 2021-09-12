@@ -12,10 +12,9 @@ import {
 export default function App() {
   return (
     <Router>
-      <div>
+      
         <GlobalStyles />
-        <HeadPanel />
-       
+        <HeadPanel />  
           <Switch>
             <Route path="/sign-in">
               <SignIn />
@@ -26,9 +25,8 @@ export default function App() {
             <Route path="/">
               <Main />
             </Route>
-          </Switch>
-        
-      </div>
+          </Switch>       
+      
     </Router>
   );
 }
