@@ -1,4 +1,4 @@
-import { HeadPanelStyled, OpacityHover, HeaderStyled } from "./HeadPanel.styled";
+import { HeadPanelStyled, OpacityHover } from "./HeadPanel.styled";
 import { Navbar, Nav, Container, Button } from 'react-bootstrap'
 import Logo from './logo.png';
 import React, { useState } from 'react';
@@ -7,32 +7,27 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 function HeadPanel() {
     const [isOpen, setOpen] = useState(false);
-    isOpen ? disableBodyScroll(document) : enableBodyScroll(document)
+    isOpen ? disableBodyScroll(document) : enableBodyScroll(document);
+    isOpen ? console.log('Panel open') : console.log('Panel close');
+    
+
+
     return (
-        <Container fluid>
-            <HeaderStyled>
-                <Navbar className="row py-4" bg="dark" variant="dark">
-                    <Container fluid className="z-index-2 position-fixed">
-                        <Navbar.Brand href="#">
-                            <OpacityHover className="d-flex">
-                                <img src={Logo} height="40px" alt="burger" />
-                                <h2>HEADBURGER</h2>
-                            </OpacityHover>
-                        </Navbar.Brand>
-                        <Nav.Item>
-                            <OpacityHover>
-                                <Hamburger
-                                    label="Show menu"
-                                    color="#F0FFFF"
-                                    toggled={isOpen}
-                                    toggle={setOpen}
-                                    hideOutline={false}
-                                />
-                            </OpacityHover>
-                        </Nav.Item>
-                    </Container>
-                </Navbar>
-            </HeaderStyled>
+        <Navbar fixed="top" bg="dark" variant="dark" className="py-0 vw-100">
+            <Container fluid className="bg-dark">
+                <OpacityHover>
+                    <Navbar.Brand href="#">
+                        <img src={Logo} height="40" alt="burger" />
+                        {' '}
+                        HEADBURGER
+                    </Navbar.Brand>
+                </OpacityHover>
+                <OpacityHover>
+                    <Nav.Item>
+                        <Hamburger label="Show menu" color="#F0FFFF" toggled={isOpen} toggle={setOpen} hideOutline={false} />
+                    </Nav.Item>
+                </OpacityHover>
+            </Container>
             <HeadPanelStyled isOpen={isOpen}>
                 <Container className="col">
                     <Button variant="success mb-5 mt-5"><h3>Sign in</h3></Button>
@@ -41,8 +36,9 @@ function HeadPanel() {
                     <Button variant="warning"><h3>Blog</h3></Button>
                 </Container>
             </HeadPanelStyled>
-        </Container>
+        </Navbar>
     );
 }
 
 export default HeadPanel;
+
