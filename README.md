@@ -1,1 +1,1 @@
-npm: hamburger react, styled components, react bootstrap
+npm: hamburger react, styled components, react bootstrap, body-scroll-lock
