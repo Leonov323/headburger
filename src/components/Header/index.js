@@ -16,33 +16,33 @@ function HeadPanel() {
 
     return (
         <Container>
-        <HeaderSpace />
-        <Navbar fixed="top" bg="dark" variant="dark" className="py-0 vw-100">      
-            <Container fluid className="bg-dark">
-                <OpacityHover>
-                    <Link onClick={headerRedirect('/headburger')} to="/headburger">
-                        <Navbar.Brand>
-                            <img src={Logo} height="40" alt="burger" />
-                            {' '}
-                            HEADBURGER
-                        </Navbar.Brand>
-                    </Link>
-                </OpacityHover>
-                <OpacityHover>
-                    <Nav.Item>
-                        <Hamburger label="Show menu" color="#F0FFFF" toggled={isOpen} toggle={setOpen} hideOutline={false} />
-                    </Nav.Item>
-                </OpacityHover>
-            </Container>
-            <HeadPanelStyled isOpen={isOpen}>
-                <Container className="col">
-                    <Link onClick={headerRedirect('/headburger/sign-in')} className="btn btn-success mb-5 mt-5" to="/headburger/sign-in"><h3>Sign in</h3></Link>
-                    <Link onClick={headerRedirect('/headburger/sign-up')} className="btn btn-primary mb-5" to="/headburger/sign-up"><h3>Sign up</h3></Link>
-                    <Link className="btn btn-info mb-5" to="/contacts"><h3>Contacts</h3></Link>
-                    <Link className="btn btn-warning" to="/blog"><h3>Blog</h3></Link>
+            <HeaderSpace />
+            <Navbar fixed="top" bg="dark" variant="dark" className="py-0 vw-100">
+                <Container fluid className="bg-dark">
+                    <OpacityHover>
+                        <Link onClick={headerRedirect('/headburger')} to="/headburger">
+                            <Navbar.Brand>
+                                <img src={Logo} height="40" alt="burger" />
+                                {' '}
+                                HEADBURGER
+                            </Navbar.Brand>
+                        </Link>
+                    </OpacityHover>
+                    <OpacityHover>
+                        <Nav.Item>
+                            <Hamburger label="Show menu" color="#F0FFFF" toggled={isOpen} toggle={setOpen} hideOutline={false} />
+                        </Nav.Item>
+                    </OpacityHover>
                 </Container>
-            </HeadPanelStyled>
-        </Navbar>
+                <HeadPanelStyled isOpen={isOpen}>
+                    <Container className="col">
+                        <Link onClick={headerRedirect('/headburger/sign-in')} className="btn btn-success mb-5 mt-5" to="/headburger/sign-in"><h3>Sign in</h3></Link>
+                        <Link onClick={headerRedirect('/headburger/sign-up')} className="btn btn-primary mb-5" to="/headburger/sign-up"><h3>Sign up</h3></Link>
+                        <Link className="btn btn-info mb-5" to="/contacts"><h3>Contacts</h3></Link>
+                        <Link className="btn btn-warning" to="/blog"><h3>Blog</h3></Link>
+                    </Container>
+                </HeadPanelStyled>
+            </Navbar>
         </Container>
     );
 }

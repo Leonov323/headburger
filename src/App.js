@@ -8,24 +8,26 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 
 export default function App() {
   return (
     <Router>
-      
-        <GlobalStyles />
-        <HeadPanel />  
-          <Switch>
-            <Route path="/headburger/sign-in">
-              <SignIn />
-            </Route>
-            <Route path="/headburger/sign-up">
-              <SignUp />
-            </Route>
-            <Route path="/headburger/">
-              <Main />
-            </Route>
-          </Switch>       
+
+      <GlobalStyles />
+      <HeadPanel />
+      <ScrollToTop />
+        <Switch>
+          <Route path="/headburger/sign-in">
+            <SignIn />
+          </Route>
+          <Route path="/headburger/sign-up">
+            <SignUp />
+          </Route>
+          <Route path="/headburger/">
+            <Main />
+          </Route>
+        </Switch>
       
     </Router>
   );

@@ -7,9 +7,9 @@ export const HeadPanelStyled = styled.div`
         width: 100vw;
         background: #292b2c;
         left: 0;
-        top: -100vh;
-        transition: all 1s ease-out;
-        transform: ${({ isOpen }) => isOpen ? 'translatey(100vh)' : 'translatey(-100vh)'};
+        top: -200vh;
+        transition: all .5s ease-out;
+        transform: ${({ isOpen }) => isOpen ? 'translatey(200vh)' : 'translatey(-200vh)'};
         padding-top: 75px;
         a {
             width: 100%;
@@ -27,7 +27,7 @@ export const OpacityHover = styled.div`
 `
 
 export const HeaderSpace = styled.div`
-    height: 45px;
+    height: 48px;
     width: 100%;
     background: #292b2c;;
 `
