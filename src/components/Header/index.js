@@ -38,8 +38,8 @@ function HeadPanel() {
                     <Container className="col">
                         <Link onClick={headerRedirect('/headburger/sign-in')} className="btn btn-success mb-5 mt-5" to="/headburger/sign-in"><h3>Sign in</h3></Link>
                         <Link onClick={headerRedirect('/headburger/sign-up')} className="btn btn-primary mb-5" to="/headburger/sign-up"><h3>Sign up</h3></Link>
-                        <Link className="btn btn-info mb-5" to="/contacts"><h3>Contacts</h3></Link>
-                        <Link className="btn btn-warning" to="/blog"><h3>Blog</h3></Link>
+                        <Link onClick={headerRedirect('/headburger/contacts')} className="btn btn-info mb-5" to="/headburger/contacts"><h3>Contacts</h3></Link>
+                        <Link onClick={headerRedirect('/headburger/blog')} className="btn btn-warning" to="/headburger/blog"><h3>Blog</h3></Link>
                     </Container>
                 </HeadPanelStyled>
             </Navbar>

@@ -1,14 +1,7 @@
-import { Container } from 'react-bootstrap'
-import styled from 'styled-components'
-import Burger from '../../Header/logo.png'
+import { Container } from 'react-bootstrap';
 
-const StyledMain = styled.div`
-    padding-top: 10px;
-    min-height: 200vh;
-    width: 100%;
-    background: gray;
-    display: block;
-`
+import Burger from '../../Header/logo.png';
+import { StyledMain, Rotate } from './Main.styled';
 
 export const Main = () => {
     return (
@@ -33,7 +26,7 @@ export const Main = () => {
                         <p>Content</p>
                     </Container>
                 </Container>
-                <Container className="row mx-auto"><img className="col-lg-6 mx-auto" src={Burger} alt="burger"/></Container>
+                <Container className="row mx-auto"><img className="col-lg-6 mx-auto" src={Burger} alt="burger" /></Container>
                 <Container className="row mx-auto">
                     <Container className="col-3">
                         <p>Content</p>
@@ -70,7 +63,9 @@ export const Main = () => {
                         <p>Content</p>
                     </Container>
                 </Container>
-                <Container className="row mx-auto"><img className="col-lg-6 mx-auto" src={Burger} alt="burger"/></Container>
+                <Rotate>
+                    <Container className="cylon_eye row mx-auto"><img className="col-lg-6 mx-auto" src={Burger} alt="burger" /></Container>
+                </Rotate>
                 <Container className="row mx-auto">
                     <Container className="col-3">
                         <p>Content</p>
