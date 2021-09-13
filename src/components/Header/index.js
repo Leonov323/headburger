@@ -20,7 +20,7 @@ function HeadPanel() {
             <Navbar fixed="top" bg="dark" variant="dark" className="py-0 vw-100">
                 <Container fluid className="bg-dark">
                     <OpacityHover>
-                        <Link onClick={headerRedirect('/headburger')} to="/headburger">
+                        <Link onClick={headerRedirect('/')} to="/">
                             <Navbar.Brand>
                                 <img src={Logo} height="40" alt="burger" />
                                 {' '}
@@ -36,10 +36,10 @@ function HeadPanel() {
                 </Container>
                 <HeadPanelStyled isOpen={isOpen}>
                     <Container className="col">
-                        <Link onClick={headerRedirect('/headburger/sign-in')} className="btn btn-success mb-5 mt-5" to="/headburger/sign-in"><h3>Sign in</h3></Link>
-                        <Link onClick={headerRedirect('/headburger/sign-up')} className="btn btn-primary mb-5" to="/headburger/sign-up"><h3>Sign up</h3></Link>
-                        <Link onClick={headerRedirect('/headburger/contacts')} className="btn btn-info mb-5" to="/headburger/contacts"><h3>Contacts</h3></Link>
-                        <Link onClick={headerRedirect('/headburger/blog')} className="btn btn-warning" to="/headburger/blog"><h3>Blog</h3></Link>
+                        <Link onClick={headerRedirect('/sign-in')} className="btn btn-success mb-5 mt-5" to="/sign-in"><h3>Sign in</h3></Link>
+                        <Link onClick={headerRedirect('/sign-up')} className="btn btn-primary mb-5" to="/sign-up"><h3>Sign up</h3></Link>
+                        <Link onClick={headerRedirect('/contacts')} className="btn btn-info mb-5" to="/contacts"><h3>Contacts</h3></Link>
+                        <Link onClick={headerRedirect('/blog')} className="btn btn-warning" to="/blog"><h3>Blog</h3></Link>
                     </Container>
                 </HeadPanelStyled>
             </Navbar>

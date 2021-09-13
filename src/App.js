@@ -1,8 +1,8 @@
 import HeadPanel from "./components/Header";
 import { GlobalStyles } from "./global";
-import { Main, SignIn, SignUp, Contacts, Blog } from './components/Main'
+import { Primary, SignIn, SignUp, Contacts, Blog } from './components/Main'
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -10,25 +10,25 @@ import ScrollToTop from "./ScrollToTop";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/headburger" >
       <GlobalStyles />
       <HeadPanel />
       <ScrollToTop />
       <Switch>
-        <Route path="/headburger/sign-in">
+        <Route path="/sign-in">
           <SignIn />
         </Route>
-        <Route path="/headburger/sign-up">
+        <Route path="/sign-up">
           <SignUp />
         </Route>
-        <Route path="/headburger/contacts">
+        <Route path="/contacts">
           <Contacts />
         </Route>
-        <Route path="/headburger/blog">
+        <Route path="/blog">
           <Blog />
         </Route>
-        <Route path="/headburger/">
-          <Main />
+        <Route path="/">
+          <Primary />
         </Route>
       </Switch>
     </Router>

@@ -1,5 +1,5 @@
 import { Container, Col, Row } from "react-bootstrap";
-import { Rotate } from '../Main/Main.styled'
+import { Rotate } from '../Primary/Primary.styled'
 import React, {Component} from 'react';
 
 
@@ -15,6 +15,7 @@ class SignIn extends Component {
     render() {
     return (
         <Container className="mt-2 text-center">
+        
             <Row>
                 {Bloger()}
             </Row>       

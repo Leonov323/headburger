@@ -1,6 +1,6 @@
 import { Container } from 'react-bootstrap';
 import Burger from '../../Header/logo.png';
-import { StyledMain, Rotate } from './Main.styled';
+import { PrimaryStyled, Rotate } from './Primary.styled';
 import React, { Component } from 'react';
 
 const text = [<Container className="col-3">
@@ -22,7 +22,7 @@ const content = [<Container className="row mx-auto">
 class Main extends Component {
     render() {
         return (
-            <StyledMain>
+            <PrimaryStyled>
                 <Container className="col text-center">
                     {content}
                     <Container className="row mx-auto">
@@ -38,7 +38,7 @@ class Main extends Component {
                     {content}
                     {content}
                 </Container>
-            </StyledMain>
+            </PrimaryStyled>
         );
     }
 }

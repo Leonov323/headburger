@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-export const StyledMain = styled.div`
+export const PrimaryStyled = styled.div`
 padding-top: 10px;
 min-height: 100vh;
 width: 100%;
