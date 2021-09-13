@@ -24,7 +24,7 @@ transform: rotate(360deg);
 `;
 
 export const Rotate = styled.div`
-display: inline-block;
+padding: 10%;
 animation: ${rotate} 2s linear infinite;
 `;
 

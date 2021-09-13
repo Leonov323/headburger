@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 
 export const Ghost = styled.div`
-width: 100%;
-display: flex;
-flex-direction: column;
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column
   section {
     position: relative;
     width: 100%;
@@ -13,7 +15,7 @@ flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    cursor: pointer;
+    
 }
 
 h2 {
@@ -21,12 +23,14 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     display: flex;
+    padding: 5px;
 }
 
 h2 span {
     transition: 1.5s;
+    margin: 0 auto;
 }
-h2:hover span {
+.ghost:hover span {
     filter: blur(20px);
     opacity: 0;
     transform: scale(2);
