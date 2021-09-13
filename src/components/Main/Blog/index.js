@@ -7,7 +7,7 @@ function Bloger() {
     const bloger = [<Col xs={4} md={2}><Rotate><h2>BLOG</h2></Rotate></Col>,
                     <Col xs={4} md={2}><Rotate><h2>BLOG</h2></Rotate></Col>,
                     <Col xs={4} md={2}><Rotate><h2>BLOG</h2></Rotate></Col>]
-    let result = [].concat(...Array(12).fill(bloger))
+    let result = [].concat(...Array(20).fill(bloger))
 
     return result;
 }
