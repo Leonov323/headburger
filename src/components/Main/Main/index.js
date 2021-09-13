@@ -26,7 +26,7 @@ export const Main = () => {
                         <p>Content</p>
                     </Container>
                 </Container>
-                <Container className="row mx-auto"><img className="col-lg-6 mx-auto" src={Burger} alt="burger" /></Container>
+                <Container className="row mx-auto"><img className="col-6 mx-auto" src={Burger} alt="burger" /></Container>
                 <Container className="row mx-auto">
                     <Container className="col-3">
                         <p>Content</p>
@@ -64,7 +64,7 @@ export const Main = () => {
                     </Container>
                 </Container>
                 <Rotate>
-                    <Container className="cylon_eye row mx-auto"><img className="col-lg-6 mx-auto" src={Burger} alt="burger" /></Container>
+                    <Container className="cylon_eye row mx-auto"><img className="col-6 mx-auto" src={Burger} alt="burger" /></Container>
                 </Rotate>
                 <Container className="row mx-auto">
                     <Container className="col-3">
