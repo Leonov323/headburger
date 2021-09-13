@@ -23,7 +23,7 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     display: flex;
-    padding: 5px;
+    
 }
 
 h2 span {

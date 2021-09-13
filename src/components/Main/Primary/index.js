@@ -8,7 +8,7 @@ const text = [
     <Ghost>
     <Container fluid className="text-center p-0 ghost">
     
-    <Col className="m-5">
+    <Col className="mt-5">
     <h2>
         <span>H</span>
         <span>E</span>
