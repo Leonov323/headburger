@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/headburger/static/js/main.d9beb098.chunk.js",
-    "main.js.map": "/headburger/static/js/main.d9beb098.chunk.js.map",
+    "main.js": "/headburger/static/js/main.ea3ecf22.chunk.js",
+    "main.js.map": "/headburger/static/js/main.ea3ecf22.chunk.js.map",
     "runtime-main.js": "/headburger/static/js/runtime-main.352e7076.js",
     "runtime-main.js.map": "/headburger/static/js/runtime-main.352e7076.js.map",
-    "static/js/2.0be0fd24.chunk.js": "/headburger/static/js/2.0be0fd24.chunk.js",
-    "static/js/2.0be0fd24.chunk.js.map": "/headburger/static/js/2.0be0fd24.chunk.js.map",
+    "static/js/2.ce65a80d.chunk.js": "/headburger/static/js/2.ce65a80d.chunk.js",
+    "static/js/2.ce65a80d.chunk.js.map": "/headburger/static/js/2.ce65a80d.chunk.js.map",
     "index.html": "/headburger/index.html",
-    "static/js/2.0be0fd24.chunk.js.LICENSE.txt": "/headburger/static/js/2.0be0fd24.chunk.js.LICENSE.txt",
+    "static/js/2.ce65a80d.chunk.js.LICENSE.txt": "/headburger/static/js/2.ce65a80d.chunk.js.LICENSE.txt",
     "static/media/logo.3057fc7c.png": "/headburger/static/media/logo.3057fc7c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.352e7076.js",
-    "static/js/2.0be0fd24.chunk.js",
-    "static/js/main.d9beb098.chunk.js"
+    "static/js/2.ce65a80d.chunk.js",
+    "static/js/main.ea3ecf22.chunk.js"
   ]
 }
