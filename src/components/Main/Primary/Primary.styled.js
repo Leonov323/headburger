@@ -1,11 +1,16 @@
 import styled, { keyframes } from 'styled-components';
 
 export const PrimaryStyled = styled.div`
-padding-top: 10px;
 min-height: 100vh;
 width: 100%;
 background: gray;
-display: block;
+
+.deletemedia { 
+@media only screen and (max-width: 576px) {
+       display: none;
+     }
+  }
+}
 `
 
 export const rotate = keyframes`
@@ -21,7 +26,5 @@ transform: rotate(360deg);
 export const Rotate = styled.div`
 display: inline-block;
 animation: ${rotate} 2s linear infinite;
-padding: 2rem 1rem;
-font-size: 1.2rem;
 `;
 
