@@ -55,9 +55,9 @@ class Primary extends Component {
             <PrimaryStyled>
                 <Container fluid>
                     <Row>
-                        <Col xs={4}>{text}</Col>
-                        <Col xs={4}>{text}</Col>
-                        <Col xs={4}>{text}</Col>
+                        <Col xs={4} className="m-0 p-0">{text}</Col>
+                        <Col xs={4} className="m-0 p-0">{text}</Col>
+                        <Col xs={4} className="m-0 p-0">{text}</Col>
                     </Row>
                     <Row>
                         <Col xs={4}>{text}</Col>
