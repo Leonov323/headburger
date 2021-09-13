@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/headburger/static/js/main.1fb052d5.chunk.js",
-    "main.js.map": "/headburger/static/js/main.1fb052d5.chunk.js.map",
+    "main.js": "/headburger/static/js/main.1251232c.chunk.js",
+    "main.js.map": "/headburger/static/js/main.1251232c.chunk.js.map",
     "runtime-main.js": "/headburger/static/js/runtime-main.352e7076.js",
     "runtime-main.js.map": "/headburger/static/js/runtime-main.352e7076.js.map",
     "static/js/2.8971a50a.chunk.js": "/headburger/static/js/2.8971a50a.chunk.js",
@@ -13,6 +13,6 @@
   "entrypoints": [
     "static/js/runtime-main.352e7076.js",
     "static/js/2.8971a50a.chunk.js",
-    "static/js/main.1fb052d5.chunk.js"
+    "static/js/main.1251232c.chunk.js"
   ]
 }
