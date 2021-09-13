@@ -1,4 +1,4 @@
-import { Container, Form, Col, Row } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 import { Rotate } from '../Main/Main.styled'
 import React, {Component} from 'react';
 

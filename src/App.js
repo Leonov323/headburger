@@ -1,10 +1,6 @@
 import HeadPanel from "./components/Header";
 import { GlobalStyles } from "./global";
-import { Main } from './components/Main/Main';
-import SignIn from './components/Main/SignIn';
-import SignUp from './components/Main/SignUp';
-import Contacts from './components/Main/Contacts'
-import Blog from './components/Main/Blog'
+import { Main, SignIn, SignUp, Contacts, Blog } from './components/Main'
 import {
   BrowserRouter as Router,
   Switch,

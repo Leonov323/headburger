@@ -1,4 +1,4 @@
-import { Container, Form, Col, Row } from "react-bootstrap";
+import { Container, Form, Col } from "react-bootstrap";
 
 function SignUp() {
 
@@ -23,12 +23,12 @@ function SignUp() {
                 </Col>
             </Form.Group>
 
-            <Form.Group as={Col} className="mb-3" controlId="formPlaintextPassword">
+            <Form.Group as={Col} className="mb-3" controlId="formPlaintextRepeatPassword">
                 <Form.Label>
                     Repeat password
                 </Form.Label>
                 <Col sm="12">
-                    <Form.Control type="password" placeholder="Repeat password" />
+                    <Form.Control type="password" placeholder="password" />
                 </Col>
             </Form.Group>
         </Form>

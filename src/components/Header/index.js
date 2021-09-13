@@ -4,7 +4,7 @@ import Logo from './logo.png';
 import React, { useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function HeadPanel() {
     const [isOpen, setOpen] = useState(false);

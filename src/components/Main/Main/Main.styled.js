@@ -1,9 +1,8 @@
 import styled, { keyframes } from 'styled-components';
 
-
 export const StyledMain = styled.div`
 padding-top: 10px;
-min-height: 200vh;
+min-height: 100vh;
 width: 100%;
 background: gray;
 display: block;
