@@ -10,7 +10,7 @@ import ScrollToTop from "./ScrollToTop";
 
 export default function App() {
   return (
-    <Router basename="/headburger" >
+    <Router basename="/" >
       <GlobalStyles />
       <HeadPanel />
       <ScrollToTop />

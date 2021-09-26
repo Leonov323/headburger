@@ -9,8 +9,7 @@ import { Link } from 'react-router-dom';
 function HeadPanel() {
     const [isOpen, setOpen] = useState(false);
     isOpen ? disableBodyScroll(document) : enableBodyScroll(document);
-    isOpen ? console.log('Panel open') : console.log('Panel close');
-    const headerRedirect = (route) => () => {
+    const autoClose = () => () => {
         setOpen(false);
     };
 
@@ -20,7 +19,7 @@ function HeadPanel() {
             <Navbar fixed="top" bg="dark" variant="dark" className="py-0 vw-100">
                 <Container fluid className="bg-dark">
                     <OpacityHover>
-                        <Link onClick={headerRedirect('/')} to="/">
+                        <Link to="/">
                             <Navbar.Brand>
                                 <img src={Logo} height="40" alt="burger" />
                                 {' '}
@@ -30,16 +29,16 @@ function HeadPanel() {
                     </OpacityHover>
                     <OpacityHover>
                         <Nav.Item>
-                            <Hamburger label="Show menu" color="#F0FFFF" toggled={isOpen} toggle={setOpen} hideOutline={false} />
+                            <Hamburger onClick={autoClose()} label="Show menu" color="#F0FFFF" toggled={isOpen} toggle={setOpen} hideOutline={false} />
                         </Nav.Item>
                     </OpacityHover>
                 </Container>
                 <HeadPanelStyled isOpen={isOpen}>
                     <Container className="col">
-                        <Link onClick={headerRedirect('/sign-in')} className="btn btn-success mb-5 mt-5" to="/sign-in"><h3>Sign in</h3></Link>
-                        <Link onClick={headerRedirect('/sign-up')} className="btn btn-primary mb-5" to="/sign-up"><h3>Sign up</h3></Link>
-                        <Link onClick={headerRedirect('/contacts')} className="btn btn-info mb-5" to="/contacts"><h3>Contacts</h3></Link>
-                        <Link onClick={headerRedirect('/blog')} className="btn btn-warning" to="/blog"><h3>Blog</h3></Link>
+                        <Link onClick={autoClose()} className="btn btn-success mb-5 mt-5" to="/sign-in"><h3>Sign in</h3></Link>
+                        <Link onClick={autoClose()} className="btn btn-primary mb-5" to="/sign-up"><h3>Sign up</h3></Link>
+                        <Link onClick={autoClose()} className="btn btn-info mb-5" to="/contacts"><h3>Contacts</h3></Link>
+                        <Link onClick={autoClose()} className="btn btn-warning" to="/blog"><h3>Blog</h3></Link>
                     </Container>
                 </HeadPanelStyled>
             </Navbar>

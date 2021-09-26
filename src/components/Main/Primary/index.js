@@ -2,13 +2,9 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 import Burger from '../../Header/logo.png';
 import { PrimaryStyled, Rotate } from './Primary.styled';
 import React, { Component } from 'react';
-import { Ghost }   from '../Contacts/Ghost.styled.js';
+import { Ghost } from '../Contacts/Ghost.styled.js';
 
 const text = [
-    <Ghost>
-    <Container fluid className="text-center p-0 ghost">
-    
-    <Col className="mt-5 mb-5">
     <h2>
         <span>H</span>
         <span>E</span>
@@ -17,37 +13,19 @@ const text = [
         <span>E</span>
         <span>R</span>
     </h2>
-    
-    <h2>
-        <span>H</span>
-        <span>E</span>
-        <span>A</span>
-        <span>D</span>
-        <span>E</span>
-        <span>R</span>
-    </h2>
-    <h2>
-        <span>H</span>
-        <span>E</span>
-        <span>A</span>
-        <span>D</span>
-        <span>E</span>
-        <span>R</span>
-    </h2>
-    </Col>
-        
-    </Container>
+]
+
+const ghostText = text.map((texts, index) => 
+    <Ghost key={index}>
+        <Container fluid className="text-center p-0 ghost">
+            <Col className="mt-5 mb-5">
+                {texts}
+                {texts}
+                {texts}
+            </Col>
+        </Container>
     </Ghost>
-]
-
-const content = [
-    <Container fluid>
-        {text}
-        {text}
-        {text}
-    </Container>
-]
-
+)
 
 class Primary extends Component {
     render() {
@@ -55,37 +33,37 @@ class Primary extends Component {
             <PrimaryStyled>
                 <Container fluid>
                     <Row>
-                        <Col xs={4} className="m-0 p-0">{text}</Col>
-                        <Col xs={4} className="m-0 p-0">{text}</Col>
-                        <Col xs={4} className="m-0 p-0">{text}</Col>
+                        <Col xs={4} className="m-0 p-0">{ghostText}</Col>
+                        <Col xs={4} className="m-0 p-0">{ghostText}</Col>
+                        <Col xs={4} className="m-0 p-0">{ghostText}</Col>
                     </Row>
                     <Row>
-                        <Col xs={4}>{text}</Col>
+                        <Col xs={4}>{ghostText}</Col>
                         <Col xs={4} className="align-items-center d-flex p-0 rotate">
                             <Rotate>
                                 <Image src={Burger} alt="burger" rounded fluid />
                             </Rotate>
                         </Col>
-                        <Col xs={4}>{text}</Col>
+                        <Col xs={4}>{ghostText}</Col>
                     </Row>
                     <Row>
-                        <Col xs={4}>{text}</Col>
-                        <Col xs={4}>{text}</Col>
-                        <Col xs={4}>{text}</Col>
+                        <Col xs={4}>{ghostText}</Col>
+                        <Col xs={4}>{ghostText}</Col>
+                        <Col xs={4}>{ghostText}</Col>
                     </Row>
                     <Row>
-                        <Col xs={4}>{text}</Col>
+                        <Col xs={4}>{ghostText}</Col>
                         <Col xs={4} className="align-items-center d-flex p-0 rotate">
                             <Rotate>
                                 <Image src={Burger} alt="burger" rounded fluid />
                             </Rotate>
                         </Col>
-                        <Col xs={4}>{text}</Col>
+                        <Col xs={4}>{ghostText}</Col>
                     </Row>
                     <Row>
-                        <Col xs={4}>{text}</Col>
-                        <Col xs={4}>{text}</Col>
-                        <Col xs={4}>{text}</Col>
+                        <Col xs={4}>{ghostText}</Col>
+                        <Col xs={4}>{ghostText}</Col>
+                        <Col xs={4}>{ghostText}</Col>
                     </Row>
                 </Container>
             </PrimaryStyled>

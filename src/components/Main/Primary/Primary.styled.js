@@ -10,7 +10,6 @@ background: gray;
        display: none;
      }
   }
-}
 `
 
 export const rotate = keyframes`

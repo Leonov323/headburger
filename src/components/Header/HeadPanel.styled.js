@@ -7,9 +7,9 @@ export const HeadPanelStyled = styled.div`
         width: 100vw;
         background: #292b2c;
         left: 0;
-        top: -200vh;
-        transition: all .5s ease-out;
-        transform: ${({ isOpen }) => isOpen ? 'translatey(200vh)' : 'translatey(-200vh)'};
+        top: 0;
+        transition: all .3s ease-out;
+        transform: ${({ isOpen }) => isOpen ? 'translatey(0vh)' : 'translatey(-100vh)'};
         padding-top: 75px;
         a {
             width: 100%;
