@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.js": "/headburger/static/js/main.2a224c81.chunk.js",
-    "main.js.map": "/headburger/static/js/main.2a224c81.chunk.js.map",
+    "main.js": "/headburger/static/js/main.927436ab.chunk.js",
+    "main.js.map": "/headburger/static/js/main.927436ab.chunk.js.map",
     "runtime-main.js": "/headburger/static/js/runtime-main.352e7076.js",
     "runtime-main.js.map": "/headburger/static/js/runtime-main.352e7076.js.map",
-    "static/js/2.2178e295.chunk.js": "/headburger/static/js/2.2178e295.chunk.js",
-    "static/js/2.2178e295.chunk.js.map": "/headburger/static/js/2.2178e295.chunk.js.map",
+    "static/css/2.983f79de.chunk.css": "/headburger/static/css/2.983f79de.chunk.css",
+    "static/js/2.3957d6b0.chunk.js": "/headburger/static/js/2.3957d6b0.chunk.js",
+    "static/js/2.3957d6b0.chunk.js.map": "/headburger/static/js/2.3957d6b0.chunk.js.map",
     "index.html": "/headburger/index.html",
-    "static/js/2.2178e295.chunk.js.LICENSE.txt": "/headburger/static/js/2.2178e295.chunk.js.LICENSE.txt",
+    "static/css/2.983f79de.chunk.css.map": "/headburger/static/css/2.983f79de.chunk.css.map",
+    "static/js/2.3957d6b0.chunk.js.LICENSE.txt": "/headburger/static/js/2.3957d6b0.chunk.js.LICENSE.txt",
     "static/media/logo.3057fc7c.png": "/headburger/static/media/logo.3057fc7c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.352e7076.js",
-    "static/js/2.2178e295.chunk.js",
-    "static/js/main.2a224c81.chunk.js"
+    "static/css/2.983f79de.chunk.css",
+    "static/js/2.3957d6b0.chunk.js",
+    "static/js/main.927436ab.chunk.js"
   ]
 }
