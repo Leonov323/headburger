@@ -1,8 +1,8 @@
-import { Container, Form, Col } from "react-bootstrap";
+import React from 'react'
+import { Container, Form, Col } from 'react-bootstrap'
 
-function SignIn() {
-
-    return (
+function SignIn () {
+  return (
     <Container className="mt-5">
         <Form className="col-md-4 mx-auto">
             <Form.Group as={Col} className="mb-3" controlId="formPlaintextEmail">
@@ -24,7 +24,7 @@ function SignIn() {
             </Form.Group>
         </Form>
     </Container>
-    );
+  )
 }
 
-export default SignIn;
+export default SignIn

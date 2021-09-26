@@ -1,9 +1,9 @@
-import { Container, Col } from "react-bootstrap";
+import React from 'react'
+import { Container, Col } from 'react-bootstrap'
 import { Ghost } from './Ghost.styled'
 
-function Contacts() {
-
-    return (
+function Contacts () {
+  return (
         <Container className="mt-5 d-flex justify-content-center">
             <Ghost>
                 <Col>
@@ -33,7 +33,7 @@ function Contacts() {
                 </Col>
             </Ghost>
         </Container>
-    );
+  )
 }
 
-export default Contacts;
+export default Contacts

@@ -1,23 +1,23 @@
-import { HeadPanelStyled, OpacityHover, HeaderSpace } from "./HeadPanel.styled";
+import { HeadPanelStyled, OpacityHover, HeaderSpace } from './HeadPanel.styled'
 import { Navbar, Nav, Container } from 'react-bootstrap'
-import Logo from './logo.png';
-import React, { useState } from 'react';
-import { Squash as Hamburger } from 'hamburger-react';
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
-import { Link } from 'react-router-dom';
+import Logo from './logo.png'
+import React, { useState } from 'react'
+import { Squash as Hamburger } from 'hamburger-react'
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
+import { Link } from 'react-router-dom'
 
-function HeadPanel() {
-    const [isOpen, setOpen] = useState(false);
-    isOpen ? disableBodyScroll(document) : enableBodyScroll(document);
-    const autoClose = () => () => {
-        setOpen(false);
-    };
+function HeadPanel () {
+  const [isOpen, setOpen] = useState(false)
+  isOpen ? disableBodyScroll(document) : enableBodyScroll(document)
+  const autoClose = () => () => {
+    setOpen(false)
+  }
 
-    return (
+  return (
         <Container>
             <HeaderSpace />
             <Navbar fixed="top" bg="dark" variant="dark" className="py-0 vw-100">
-                <Container fluid className="bg-dark">
+                <Container fluid className="bg-dark px-4">
                     <OpacityHover>
                         <Link to="/">
                             <Navbar.Brand>
@@ -43,8 +43,7 @@ function HeadPanel() {
                 </HeadPanelStyled>
             </Navbar>
         </Container>
-    );
+  )
 }
 
-export default HeadPanel;
-
+export default HeadPanel

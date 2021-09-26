@@ -1,16 +1,17 @@
-import HeadPanel from "./components/Header";
-import { GlobalStyles } from "./global";
+import React from 'react'
+import HeadPanel from './components/Header'
+import { GlobalStyles } from './global'
 import { Primary, SignIn, SignUp, Contacts, Blog } from './components/Main'
 import {
   HashRouter as Router,
   Switch,
-  Route,
-} from "react-router-dom";
-import ScrollToTop from "./ScrollToTop";
+  Route
+} from 'react-router-dom'
+import ScrollToTop from './ScrollToTop'
 
-export default function App() {
+export default function App () {
   return (
-    <Router basename="/" >
+    <Router>
       <GlobalStyles />
       <HeadPanel />
       <ScrollToTop />
@@ -32,5 +33,5 @@ export default function App() {
         </Route>
       </Switch>
     </Router>
-  );
+  )
 }

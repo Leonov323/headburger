@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from 'styled-components'
 
 export const PrimaryStyled = styled.div`
 min-height: 100vh;
@@ -20,10 +20,9 @@ transform: rotate(0deg);
 to {
 transform: rotate(360deg);
 }
-`;
+`
 
 export const Rotate = styled.div`
 padding: 10%;
 animation: ${rotate} 2s linear infinite;
-`;
-
+`
