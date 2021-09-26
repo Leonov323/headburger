@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     text-rendering: optimizeLegibility;
     width: 100vw;
+    padding-right: 15px;
     overflow-x: hidden !important;
     background: gray;
   }

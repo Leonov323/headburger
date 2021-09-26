@@ -17,7 +17,7 @@ function HeadPanel () {
         <Container>
             <HeaderSpace />
             <Navbar fixed="top" bg="dark" variant="dark" className="py-0 vw-100">
-                <Container fluid className="bg-dark px-4">
+                <Container fluid className="bg-dark px-3">
                     <OpacityHover>
                         <Link to="/">
                             <Navbar.Brand>
